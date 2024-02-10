@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(125, 159, 210);
+    background-image:linear-gradient(to right, rgb(116, 58, 116), rgb(153, 141, 174),rgb(97, 97, 152));
+}
+.container {
+  
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px; /* Add some padding for better spacing on small screens */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%; /* Make the input field full-width */
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%; /* Make the button full-width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#definition,
+#synonyms,
+#audio {
+    margin-top: 20px;
+    font-size: 30px;
+}
+#definition{
+    color: #213dc9;
+}
+#synonyms{
+    color: rgb(233, 11, 48);
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1000px;
+    }
+}
