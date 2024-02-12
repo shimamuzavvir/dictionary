@@ -25,8 +25,8 @@ function fetchDefinition() {
         }
 
         // Extracting phonetic word
-        var phonetic = meanings[0].phonetic;
-        document.getElementById("phonetic").innerHTML = "Phonetic: " + phonetic;
+        var phonetic = meanings[0].phonetics[0].text;
+        document.getElementById("phonetic").innerHTML = `<b>Phonetic: <i>  ${phonetic}</i> <b>;
        
         // Extracting audio pronunciation
         if (data[0].phonetics && data[0].phonetics[0].audio) {
