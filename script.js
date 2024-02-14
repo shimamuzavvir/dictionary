@@ -38,6 +38,7 @@ function getValue() {
         } else {
             document.getElementById("audio").innerText = "Audio: Not available";
         }
+        document.getElementById("wordInput").value = ""
       
     })
     .catch(error => {
